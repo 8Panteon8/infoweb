@@ -48,7 +48,7 @@ Install the dependencies:
 npm install
 ```
 
-Build jekyll 
+Build jekyll:
 ```shell
 jekyll b
 ```
