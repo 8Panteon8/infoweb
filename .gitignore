@@ -1,0 +1,13 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.firebase
+images/dist
+robots.txt
+package-lock.json
+.DS_Store
+node_modules
+.firebaserc
+firebase.json

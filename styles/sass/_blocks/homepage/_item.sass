@@ -1,0 +1,121 @@
+.item-title
+  min-height: 340px
+  &-content
+    position: absolute
+    bottom: 0
+    color: #fff
+    padding: 40px
+    z-index: 1
+    h3
+      margin: 0
+      text-transform: uppercase
+      font-weight: 800
+      line-height: 1.25
+      font-size: 19px
+    a
+      color: #fff
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+
+
+.pattern
+  background-color: $dark
+  position: relative
+  display: block
+  &::before
+    content: ""
+    transition: opacity .25s ease, top .25s ease, leaft .25s ease, bottom .25s ease, right .25s ease
+    z-index: 1
+    position: absolute
+    border: #fff solid 1px
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    opacity: 0
+  &:hover
+    &::before
+      opacity: 0.2
+      top: 10px
+      right: 10px
+      bottom: 10px
+      left: 10px
+    .overlay
+      &::before
+        opacity: 0.75
+  &-cat-header
+    &::before
+      display: none
+
+.overlay
+  background-size: cover
+  background-position: center
+  position: relative
+  display: block
+  &::before
+    content: ""
+    background-color: $dark
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    opacity: 0.55
+    transition: opacity .25s ease
+  &:hover
+    &::before
+      opacity: 0.75
+
+.item-social
+  margin-top: 10px
+  .fa
+    font-size: 12px
+    margin-right: 5px
+
+.item-comments
+  display: inline-block
+  margin-right: 20px
+  &-count
+    font-size: 12px
+    display: inline-block
+    position: relative
+    &::after
+      content: ""
+      font-family: fontawesome
+      font-size: 5px
+      top: 35%
+      margin-left: 10px
+      margin-right: 10px
+      position: absolute
+      opacity: 0.25
+
+.likely-custom
+  display: inline-block
+  font-size: 12px
+  .likely__button
+    padding-left: 15px
+  > div
+    padding: 0 4px 0 3px
+    position: relative
+    cursor: pointer
+    margin: 6px 2px 0
+    border: 1px solid #fff
+    border-radius: 2px
+  .likely__counter
+    display: none
+  svg
+    width: 11px
+    height: auto
+    position: absolute
+    top: 3.5px
+    left: 4px
+    path
+      fill: #fff
+  > *
+    display: inline-block
+
+
+
+

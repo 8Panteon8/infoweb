@@ -1,0 +1,23 @@
+  <footer class="main-footer">
+    <div class="container">
+      <nav class="main-menu footer-menu">
+        {% include /homepage/main-menu.html %}
+      </nav>
+      <nav class="soc">
+        <ul>
+          {{site.soc}}
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <footer class="bottom-footer">
+    <div class="container text-center">
+      <div class="footer-copy">{{site.time | date: '%Y'}} © <span class="logo-footer logo-litera">GeekTOP.ru</span></div>
+      <p>{{site.copyright}}</p>
+    </div>
+  </footer>
+
+  <script src="js/app.min.js"></script>
+  <script id="dsq-count-scr" src="//geektop-xeuw66uanj.disqus.com/count.js" async></script>
+</body>
+</html>

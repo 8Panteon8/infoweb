@@ -1,0 +1,24 @@
+
+<div class="cat-list">
+  <div class="container-fluid">
+    <div class="ad top-ad">
+      {% include /advertisement/ad-type-1.html %}
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="all-post-header">{{page.title}}</div>
+        <div class="cat-list-wrap">
+          {% for post in paginator.posts %}
+          {% include/category/cat-list-item.html %}
+          {% endfor %}
+        </div>
+        <section>
+          {% include /pagination/pagination-section-first.html%}
+        </section>
+      </div>
+      <div class="col-md-4">
+        {% include /category/category-aside.html %}
+      </div>
+    </div>
+  </div>
+</div>

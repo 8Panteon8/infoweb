@@ -1,0 +1,21 @@
+{
+	"gpost": {
+		"prefix": "gpost",
+		"body": [
+"---",
+"layout: post",
+"title: ${1:Заголовок статьи}",
+"description: ${2:Описание}",
+"categories: ${3:URL категории}",
+"catname: ${4:Наименование категории}",
+"image: \"images/${3:URL категории}/${5:Папка с изображением}/1.jpg\"",
+"thumb: \"images/${3:URL категории}/${5:Папка с изображением}/1t.jpg\"",
+"permalink: \"blog/:categories/:year-:month-:day-:slug.html\"",
+"---",
+"",
+"<blockquote>${6:Первый параграф статьи}</blockquote>",
+"",
+"",
+		]
+	}
+}

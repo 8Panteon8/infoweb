@@ -1,0 +1,122 @@
+.cat-list
+  padding-top: $gutter
+  background-color: #fff
+
+.cat-list-item
+  color: $textcolor
+  display: block
+  text-decoration: none
+  margin:
+    bottom: math.div($gutter, 1.5)
+    top: math.div($gutter, 1.5)
+  padding-bottom: 4px
+  border-bottom: 1px solid #dfdfdf
+  h2, h3
+    transition: color .25s ease
+    line-height: 1.2
+    font-size: 21px
+    font-weight: 800
+    margin: 0
+
+  img
+    transition: opacity .25s ease
+    margin-bottom: 12px
+  p
+    font-size: 15.4px
+    margin-top: 10px
+  .data
+    margin-top: 5px
+  &:hover
+    .pattern
+      &::before
+        top: 10px
+        right: 10px
+        bottom: 10px
+        left: 10px
+        opacity: 0.2
+        z-index: 10
+      img
+        opacity: 0.75
+    h2, h3
+      text-decoration: underline
+      color: $accent1
+    p
+      color: $textcolor
+  &:last-child
+    border-bottom: none
+
+.lb-header
+  border-bottom: 2px solid $accent1
+  padding-bottom: 5px
+
+.lb-header, .all-post-header
+  font-size: 21px
+  font-weight: 800
+  margin: 0
+  text-align: left
+
+.all-post-header
+  text-transform: uppercase
+
+.lb-item
+  position: relative
+  padding-left: 120px
+  background-color: #f0f0f0
+  margin-bottom: 2px
+  transition: background-color .25s ease
+  text-align: left
+  &:hover
+    background-color: $accent1
+    .lb-catname
+      color: #fff
+  .lb-body
+    background-color: #f9f9f9
+    padding: 10px 15px
+    a
+      color: $textcolor
+      transition: color .25s ease
+    &:hover
+      color: $accent1
+  &-header
+    font-size: 14px
+    line-height: 1.4
+    display: block
+    font-weight: 500
+  .data
+    display: inline-block
+    margin-left: 20px
+    color: #aaaaaa
+    margin-top: 0
+  .item-comments
+    .fa
+      font-size: 12px
+      margin-right: 12px
+      color: #aaaaaa
+    .item-comments-count
+      color: #aaaaaa
+      &:hover
+        color: $accent1
+        &::after
+          color: #aaaaaa
+
+.lb-catname
+  position: absolute
+  left: 15px
+  top: 15px
+  color: #888
+  font-size: 14px
+  font-weight: 800
+  min-width: 90px
+  transition: color .25s ease
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  &:focus
+    color: #888
+
+.lb-footer
+  line-height: 1.2
+
+
+
+
